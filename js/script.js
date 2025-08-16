@@ -1,33 +1,33 @@
 let number = 0;
-while (number < 10) {
-    console.log(number);
-    number += 1
+while (number <= 10) {
+  console.log(number);
+  number += 1;
 }
 
 console.log("----------------------------");
 
-
 for (let i = 0; i < 20; i += 1) {
-    if (i % 2 === 0) {
-        continue
-    }
+  if (i % 2 === 0) {
     console.log(i);
+  } else {
+    continue;
+  }
 }
 
 console.log("----------------------------");
 
 for (let i = 0; i <= 10; i += 1) {
-    console.log(`7 x ${i} = ${7 * i}`);
+  console.log(`7 x ${i} = ${7 * i}`);
 }
 
 console.log("----------------------------");
 
-let count = +prompt("Введіть число:")
+let count = +prompt("Введіть число:");
 for (let i = 0; i <= count; i += 1) {
-    console.log(i);
-    if (i >= count) {
-        break
-    }
+  console.log(i);
+  if (i >= count) {
+    break;
+  }
 }
 
 console.log("----------------------------");
